@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<!-- Created By CodingNepal -->
+<html lang="en" dir="ltr">
+   <head>
+      <meta charset="utf-8">
+      <!-- <title>Neumorphism Login Form UI | CodingNepal</title> -->
+      <link rel="stylesheet" href="css/sign up.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+          integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+          crossorigin="anonymous" referrerpolicy="no-referrer" />
+          <link href='https://fonts.googleapis.com/css?family=Abril Fatface' rel='stylesheet'>
+          <link href='https://fonts.googleapis.com/css?family=Aclonica' rel='stylesheet'>
+          
+   </head>
+   <body>
+      <div class="content">
+         <div class="text">
+            Sign Up 
+         </div>
+         <form onsubmit="return validation()" action="login.html">
+            <div class="field">
+               <input type="text" id="username" required >
+               <span class="fas fa-user"></span>
+               <label>Enter User Name</label>
+            </div>
+            
+            <div class="field">
+               <input type="email" id="email" required >
+               <span class="fas fa-user"></span>
+               <label>Enter Email</label>
+            </div>
+            <br>
+            <div class="field" >
+               <input type="password" id="password" required >
+               <span class="fas fa-lock"></span>
+               <label>Enter Password</label>
+            </div>
+            <br>
+            <div class="field" >
+               <input type="password" id="confirmPassword" required >
+               <span class="fas fa-lock"></span>
+               <label>Confirm Password</label>
+            </div>
+            <br>
+            <div class="field">
+               <input type="text" id="phone" required >
+               <span class="fa-solid fa-mobile"></span>
+               <label>Phone Number</label>
+            </div>
+           <br>
+           <div class="field">
+            <input type="text" id="address" required >
+            <span><i class="fa-solid fa-location-dot"></i></span>
+            <label>Address</label>
+         </div>
+         <span id = "message" style="color:red ; font-size:small;"> </span>
+         <br>
+            <button type="submit" onclick="registeration()">Sign Up</button>
+            <!-- <input type="submit" value="Register" onclick="registeration()"> -->
+          
+            <div class="sign-up">
+               Already Have Account
+               <a href="login.html">Login</a>
+            </div>
+         </form>
+      </div>
+
+
+      <script src="js/sign up.js"></script>
+   </body>
+</html>

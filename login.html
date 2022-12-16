@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<!-- Created By CodingNepal -->
+<html lang="en" dir="ltr">
+   <head>
+      <meta charset="utf-8">
+      <!-- <title>Neumorphism Login Form UI | CodingNepal</title> -->
+      <link rel="stylesheet" href="css/login.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+   </head>
+   <body>
+      <div class="content">
+         <div class="text">
+            Login 
+         </div>
+         <form onsubmit="return login()" action="index.html">
+            <div class="field">
+               <input type="email" id="Email" required >
+               <span class="fas fa-user"></span>
+               <label>Enter Your Email</label>
+            </div>
+            <div class="field">
+               <input type="password" id="Password" required >
+               <span class="fas fa-lock"></span>
+               <label>Enter Your Password</label>
+            </div>
+            <span id = "message1" style="color:rgb(255, 20, 20) ; font-size: small;"> </span>
+           <br>
+            <button type="submit">Login</button>
+            <div class="sign-up">
+               Not a member?
+               <a href="signup.html">signup now</a>
+            </div>
+         </form>
+      </div>
+      <script src="js/sign up.js"></script>
+   </body>
+</html>
